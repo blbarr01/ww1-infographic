@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+    background-color: rgba(44, 40, 40, 0.891);
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.shadow{
+    text-shadow: 0 0 5px black;
+}
+
+.red{
+    color: red;
+}
+
+p{
+ font-size: 1.55rem;
+}
+
+@media screen and (min-width: 426px) {
+    p {
+        font-size: 1.55rem;
+    }
+
+    h2 {
+        font-size: 2.35rem;
+    }
+
+    h1 {
+        font-size: 4.0rem;
+    }
+
+    main {
+        margin: 20px;
+        background-color: rgb(91, 88, 88);
+    }
+}
+
+header>h1,
+header>h2 {
+    text-align: center;
+}
+
+p>a,
+p>a:visited {
+    color: aliceblue;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+section {
+    margin: 40px;
+    background-color: rgb(19, 15, 15);
+}
+
+.section-title {
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 3.0rem;
+}
+
+section>p {
+    padding: 0px 15px;
+}
+
+#BOTS {
+    background-image: url(https://www.gethistory.co.uk/sites/default/files/styles/large/public/2017-03/Over-the-top.jpg?itok=k6oTSkT8);
+    background-size: cover;
+
+}
+
+.dual-content {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem;
+  }
+
+.bots-txt-container,.sboty-text-container {
+    background-color: rgba(91, 88, 88, 0.700);
+}
+
+.bots-txt-container>p {
+    padding: 20px;
+}
+
+.img-width-full{
+    width: 100%;
+}
+
+.img-height-half{
+    height: 500px;
+}
+.img-text-pair {
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+.img-text-pair >p {
+    max-width: 600px;
+    margin: 50px 10px 0px;
+}
+
+@media screen and (max-width: 426px) {
+    .img-text-pair {
+        display: block;
+    }
+
+    .bots-txt-container>p {
+        padding: 0;
+    }
+
+
+}
+
+.img-text-pair>img {
+    max-width: 320px;
+    height: 227px;
+    border-radius: 15px 50px 30px 5px;
+}
+
+/* the parallax styling */
+/* *************************************** */
+
+.parallax-wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 15px;
+    scrollbar-width: none;
+    background-attachment:fixed ;
+}
+
+.plax-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background,
+.foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+.background {
+    transform: translateZ(-15px) scale(4.5);
+    background-size: 100%;
+}
+
+.foreground {
+    transform: translateZ(-5px) scale(1.5);
+}
+
+/* *************************************** */
+
+.verdun-subtitle, .MA-subtitle{
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+
+#BOMA-title-container{
+    background-image: url(https://sgtyork.org/sites/default/files/main-legacy-meuseoff.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#BOMA-title-container>P{
+    margin-left: 10px ;
+}
+
+
+
+.column-thirds {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+.column-halves{
+    float: left;
+    width: 45%;
+    padding: 5px;
+    border: 1px solid red;
+}
+
+.poppies{
+    background-image: url(http://static1.squarespace.com/static/5e342c35f58edf15f5cb59c1/5e45f15bd7dc715e8addc603/5e4c18aa0d5160641fe41c32/1582045381865/hoverkamp-beach-red-poppies.jpg?format=1500w);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#FF{
+    text-align: center;
+    font-size: 1.15rem;
+}
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
