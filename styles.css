@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 body {
+    /* border: 2px solid magenta; */
     background-color: rgba(44, 40, 40, 0.891);
     color: white;
     font-family: 'Oswald', sans-serif;
+    margin: auto;
+    padding: 3em 6em;
 }
 
 .shadow{
@@ -32,14 +35,33 @@ p{
     }
 
     main {
-        margin: 20px;
-        background-color: rgb(91, 88, 88);
+        /* border: 2px solid red; */
+        margin: auto;
+        background-color:  rgba(44, 40, 40, 0.891);
     }
 }
 
 header>h1,
 header>h2 {
     text-align: center;
+    font-size: 4rem;
+}
+
+header, main{
+    margin: auto;
+    max-width: 1280px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#header-text{
+    /* border: 2px solid red; */
+    margin-left: 2em;
+    margin-bottom: 2em;
+    padding-left: 2em;
 }
 
 p>a,
@@ -50,8 +72,10 @@ p>a:visited {
 }
 
 section {
-    margin: 40px;
+    margin: 4em;
+    padding: 2em;
     background-color: rgb(19, 15, 15);
+    /* border: 2px solid green; */
 }
 
 .section-title {
@@ -188,7 +212,6 @@ section>p {
     float: left;
     width: 45%;
     padding: 5px;
-    border: 1px solid red;
 }
 
 .poppies{
@@ -206,4 +229,10 @@ section>p {
     content: "";
     clear: both;
     display: table;
+  }
+
+  .art-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
   }
