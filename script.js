@@ -14,6 +14,7 @@ $(document).ready(()=> {
 
     fetchAndAppend("Battle_of_the_Frontiers", "#bof-wiki"); 
     fetchAndAppend("Second_Battle_of_Ypres", "#sboty-wiki");
+    fetchAndAppend("Battle_of_the_Somme", "#bots-wiki");
 
 });
 
