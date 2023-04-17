@@ -1,150 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+
+*{
+    box-sizing: border-box;
+    --max-width-desktop: 1280px;
+    --accent-primary: #FF000077; 
+}
+
 body {
-    /* border: 2px solid magenta; */
     background-color: rgba(44, 40, 40, 0.891);
     color: white;
     font-family: 'Oswald', sans-serif;
-    margin: auto;
-    padding: 3em 6em;
+    margin: 0;
+    font-size: 1.25rem;
 }
 
-.shadow{
-    text-shadow: 0 0 5px black;
-}
-
-.red{
+.txt-accent-prim{
     color: red;
 }
-
-p{
- font-size: 1.55rem;
+a{
+    color: white;
 }
 
-@media screen and (min-width: 426px) {
-    p {
-        font-size: 1.55rem;
-    }
-
-    h2 {
-        font-size: 2.35rem;
-    }
-
-    h1 {
-        font-size: 4.0rem;
-    }
-
-    main {
-        /* border: 2px solid red; */
-        margin: auto;
-        background-color:  rgba(44, 40, 40, 0.891);
-    }
+a:visited{
+    color: var(--accent-primary);
 }
 
-header>h1,
-header>h2 {
-    text-align: center;
-    font-size: 4rem;
+.bg-black{
+    background-color:black ;
 }
 
-header, main{
-    margin: auto;
-    max-width: 1280px;
+
+.margins{
+    max-width: var(--max-width-desktop);
+    margin: 1em 2em 0;
 }
-header{
+
+.padding{
+    padding: .25em .5em;
+}
+
+#site-header{
     display: flex;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-primary);
     flex-direction: column;
-    justify-content: center;
 }
 
-#header-text{
-    /* border: 2px solid red; */
-    margin-left: 2em;
-    margin-bottom: 2em;
-    padding-left: 2em;
+#site-body{
+    /* border: 2px solid magenta; */
 }
 
-p>a,
-p>a:visited {
-    color: aliceblue;
-    text-decoration: underline;
-    font-weight: bolder;
+.grid-wrapper{
+    display: grid;
+    gap: 1.5em;
+    grid-auto-flow: row;
 }
 
-section {
-    margin: 4em;
-    padding: 2em;
-    background-color: rgb(19, 15, 15);
-    /* border: 2px solid green; */
+
+.site-nav{
+    list-style: none;
 }
 
-.section-title {
-    padding-top: 20px;
-    padding-left: 10px;
-    font-size: 3.0rem;
-}
-
-section>p {
-    padding: 0px 15px;
-}
-
-#BOTS {
-    background-image: url(https://www.gethistory.co.uk/sites/default/files/styles/large/public/2017-03/Over-the-top.jpg?itok=k6oTSkT8);
+.poppies{
+    background-image: url(http://static1.squarespace.com/static/5e342c35f58edf15f5cb59c1/5e45f15bd7dc715e8addc603/5e4c18aa0d5160641fe41c32/1582045381865/hoverkamp-beach-red-poppies.jpg?format=1500w);
+    background-repeat: no-repeat;
     background-size: cover;
-
 }
-
-.dual-content {
-    border: 1px solid black;
-    margin: 1rem;
-    padding: 2rem 2rem;
-  }
-
-.bots-txt-container,.sboty-text-container {
-    background-color: rgba(91, 88, 88, 0.700);
-}
-
-.bots-txt-container>p {
-    padding: 20px;
-}
-
-.img-width-full{
-    width: 100%;
-}
-
-.img-height-half{
-    height: 500px;
-}
-.img-text-pair {
-    display: inline-flex;
-    margin-top: 20px;
-}
-
-.img-text-pair >p {
-    max-width: 600px;
-    margin: 50px 10px 0px;
-}
-
-@media screen and (max-width: 426px) {
-    .img-text-pair {
-        display: block;
-    }
-
-    .bots-txt-container>p {
-        padding: 0;
-    }
-
-
-}
-
-.img-text-pair>img {
-    max-width: 320px;
-    height: 227px;
-    border-radius: 15px 50px 30px 5px;
-}
-
-/* the parallax styling */
-/* *************************************** */
 
 .parallax-wrapper {
     height: 100vh;
@@ -154,7 +76,6 @@ section>p {
     scrollbar-width: none;
     background-attachment:fixed ;
 }
-
 .plax-header {
     position: relative;
     display: flex;
@@ -182,57 +103,58 @@ section>p {
     transform: translateZ(-5px) scale(1.5);
 }
 
-/* *************************************** */
+/* tablet sizing */
+@media only screen and (min-width: 480px) {
+    .site-nav{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
 
-.verdun-subtitle, .MA-subtitle{
-    text-align: center;
-    font-size: 2rem;
-    font-style: italic;
+    .padding{
+        padding:.5em 1em;
+    }
+
+    .grid-wrapper {
+        /* border: 2px solid magenta; */
+        grid-template-columns: repeat(4, 1fr);
+        max-width: var(--max-width-desktop);
+    }
+
+    #belligerents-lists{
+        /* border: 2px solid magenta; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+
+    .col-2{
+        grid-column: span 2;     
+    }
 }
 
+/* desktop sizing */
+@media only screen and (min-width:1081px){
+    h1{
+        font-size: 3.25rem;
+    }
+    
+    .margins{
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
 
-#BOMA-title-container{
-    background-image: url(https://sgtyork.org/sites/default/files/main-legacy-meuseoff.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+
+    .img-width-full{
+        width: 100%;
+    }
+    
+    .img-height-half{
+        height: 100%;
+    }
+
+
 }
-
-#BOMA-title-container>P{
-    margin-left: 10px ;
-}
-
-
-
-.column-thirds {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-  }
-.column-halves{
-    float: left;
-    width: 45%;
-    padding: 5px;
-}
-
-.poppies{
-    background-image: url(http://static1.squarespace.com/static/5e342c35f58edf15f5cb59c1/5e45f15bd7dc715e8addc603/5e4c18aa0d5160641fe41c32/1582045381865/hoverkamp-beach-red-poppies.jpg?format=1500w);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#FF{
-    text-align: center;
-    font-size: 1.15rem;
-}
-  /* Clear floats after image containers */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .art-wrapper{
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-  }
