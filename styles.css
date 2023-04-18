@@ -125,7 +125,7 @@ img{
         max-width: var(--max-width-desktop);
     }
     .col-2{
-        grid-column: span 1;     
+        grid-column: span 2;     
     }
 
     #belligerents-lists{
