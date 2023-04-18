@@ -100,6 +100,13 @@ img{
     width: 220px;
 }
 
+.october-revolution-header{
+    background-image: url(https://cdn.britannica.com/47/71447-131-D3FA964C/soldiers-Red-Army.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 #BOTS{
     color: #fff;
