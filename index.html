@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/popmotion@8.1.24/dist/popmotion.global.min.js" defer></script>
     <title>WWI at a Glance</title>
 </head>
 
@@ -159,17 +160,12 @@
             </div>
         </section>
         <section id="BOV">
-            <div class="parallax-wrapper">
-                <div class="plax-header">
-                    <h2 class="section-title">The Battle of Verdun: <span>
-                            <h3 class="verdun-subtitle shadow red">The Charnal Horror House</h3>
+            <div class="parallax-container">
+                <div class="">
+                    <h2 class="section-title shadow">The Battle of Verdun: <span>
+                            <h3 class="verdun-subtitle shadow txt-accent-prim">The Charnal Horror House</h3>
                         </span></h2>
 
-                    <img class="foreground" style="width: 100%;"
-                        src="https://teachingamericanhistory.org/content/uploads/2021/09/p03j3vd5.jpg" alt="">
-                    <img class="background" style="width: 100%;"
-                        src="https://www.militarytrader.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY3OTc3NzAxMzAyODA1Nzc3/image-placeholder-title.jpg"
-                        alt="">
                 </div>
                 <div id="germans-at-verdun" class="grid-wrapper">
                     <div class="col-2">
@@ -185,13 +181,19 @@
                         </p>
                     </div>
                 </div>
+                <div class="padding bg-transparent shadow">
+                    <h3 >wiki says</h3>
+                    <div id="bov-wiki" style="text-align: left;" ></div>
+                </div>
+            </div>
+            <div class=" parallax-container parallax-container2">
                 <div id="french-at-verdun" class="grid-wrapper">
                     <div class="col-1">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Robert_Georges_Nivelle.jpg/440px-Robert_Georges_Nivelle.jpg"
                             alt="Robert Nivelle">
                     </div>
                     <div class="col-2">
-                        <p class="shadow">
+                        <p class="shadow bg-transparent">
                             The French General Robert Nivelle met the German aggression, credited with the rallying cry
                             for the
                             French <em>Ils ne passeront pas</em>, they shall not pass.
@@ -204,6 +206,7 @@
                     </div>
                 </div>
             </div>
+    
         </section>
         <section id="BOTS" class="bg-black padding">
             <div class="bots-image-wrapper">
@@ -234,8 +237,46 @@
                                 style="width:100%; max-width: min-content;">
                         </div>
                     </div>
+                    <div class="padding">
+                        <p>
+                            the Somme, like most other WWI offensives, was a failure.
+                            instead of invograting the British Empire forces, it demoralized them.
+                            The British general <span class="txt-accent-prim"> Sir Douglas Haig</span>  earned his nickname,
+                            <em class="txt-accent-prim">the Butcher</em> of the Somme
+                        </p>
+                        <p>
+                            In the novel, <em>Tender is the Night</em> F. Scott Fitzgeral wrote of the Somme:
+                        <blockquote>"See that little stream — we could walk to it in two minutes. It took the British a month to
+                            walk to it — a whole empire walking very slowly, dying in front and pushing forward behind. And
+                            another empire walked very slowly backward a few inches a day, leaving the dead like a million
+                            bloody rugs. . .there was a century of middle-class love spent here"</blockquote>
+                        </p>
+                    </div>
                 </div>
             </div>
+        </section>
+        <section id="BOTMA" class="margins">
+            <div id="BOMA-title-container" class="padding">
+                <h2 class="section-title shadow">The Meuse Argonne Offensive</h2>
+                <h3 class="MA-subtitle shadow txt-accent-prim">America Enters the Fight</h3>
+                <p class="shadow">
+                    Despite Americas modern reputation for a formidable army,
+                    at the turn of the century, European powers thought of the American Expeditionay Forces (AEF)
+                    as little more than a band of cowboys. The Largest and bloodiest War America had fought was against
+                    itself.
+                    They had barely been able to secure their southern border against
+                    the likes of Pancho Via who had led the then Lieutenant Patton and AEF on a
+                    wild goose chase through the Mexican desert.
+                </p>
+                <p class="shadow">
+                    How would the Americans fare given the modern war? <br>
+                    Would the fresh-faced American troops be able to turn the tide?<br>
+                    Would the entante persist if they couldn't? <br>
+                    the world waited on bated breath
+                </p>
+            </div>
+            <h3>wiki says</h3>
+            <div id="boma-wiki"></div>
         </section>
     </main>
 </body>

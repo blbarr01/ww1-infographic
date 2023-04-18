@@ -54,17 +54,26 @@ a:visited{
     flex-direction: column;
 }
 
-#site-body{
-    /* border: 2px solid magenta; */
+.section-title{
+    text-align: left;
+    font-size: 3.25rem;
 }
 
 .grid-wrapper{
     display: grid;
     gap: 1.5em;
     grid-auto-flow: row;
+    grid-template-columns: repeat(1, 1fr);
+
 }
 
+[class*="col-"] {
 
+}
+
+img{
+    width:100%; max-width: min-content;
+}
 .site-nav{
     list-style: none;
 }
@@ -80,11 +89,51 @@ a:visited{
     background-size: cover;
 }
 
+.parallax-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    /*  this is where the magic happens:  */
+    background-attachment: fixed;
+  
+    background-image: url(https://teachingamericanhistory.org/content/uploads/2021/09/p03j3vd5.jpg);
+    background-position: center;
+    background-size: cover;
+    row-gap: 4rem;
+  
+    text-align: center;
+  }
+
+  .parallax-container2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-size: contain;
+    padding: 6rem 0;
+    background-image: url(https://www.militarytrader.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY3OTc3NzAxMzAyODA1Nzc3/image-placeholder-title.jpg);
+    gap: 1.6em;
+  }
+
+  .buffer {
+    width: 100%;
+    min-height: 60vh;
+  }
+
 #BOTS{
     color: #fff;
 }
 
+#BOMA-title-container{
+    background-image: url(https://sgtyork.org/sites/default/files/main-legacy-meuseoff.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.MA-subtitle{
+    text-align: center;
+}
 
 /* tablet sizing */
 @media only screen and (min-width: 480px) {
@@ -100,7 +149,7 @@ a:visited{
 
     .grid-wrapper {
         /* border: 2px solid magenta; */
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         max-width: var(--max-width-desktop);
     }
 
@@ -136,6 +185,11 @@ a:visited{
     
     .img-height-half{
         height: 100%;
+    }
+
+    .grid-wrapper{
+        grid-template-columns: repeat(4, 1fr);
+
     }
 
 

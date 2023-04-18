@@ -1,4 +1,3 @@
-
 //once the document is loaded allow these calls to be made 
 $(document).ready(()=> {
     $("#ww1-wiki-call").on("click",async (event)=>{
@@ -15,6 +14,8 @@ $(document).ready(()=> {
     fetchAndAppend("Battle_of_the_Frontiers", "#bof-wiki"); 
     fetchAndAppend("Second_Battle_of_Ypres", "#sboty-wiki");
     fetchAndAppend("Battle_of_the_Somme", "#bots-wiki");
+    fetchAndAppend("Meuse–Argonne_offensive", "#boma-wiki");
+    fetchAndAppend("Battle_of_Verdun", "#bov-wiki");
 
 });
 
