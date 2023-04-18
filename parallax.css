@@ -1,0 +1,31 @@
+.parallax-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    /*  this is where the magic happens:  */
+    background-attachment: fixed;
+  
+    background-image: url(https://teachingamericanhistory.org/content/uploads/2021/09/p03j3vd5.jpg);
+    background-position: center;
+    background-size: cover;
+    row-gap: 4rem;
+  
+    text-align: center;
+  }
+
+  .parallax-container2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-size: contain;
+    padding: 6rem 0;
+    background-image: url(https://www.militarytrader.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY3OTc3NzAxMzAyODA1Nzc3/image-placeholder-title.jpg);
+    gap: 1.6em;
+  }
+
+  .buffer {
+    width: 100%;
+    min-height: 60vh;
+  }
