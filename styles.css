@@ -86,43 +86,15 @@ img{
 
 .bots-image-wrapper{
     background-image: url(https://www.gethistory.co.uk/sites/default/files/styles/large/public/2017-03/Over-the-top.jpg?itok=k6oTSkT8);
-    background-size: cover;
+    background-size:cover;
 }
 
-.parallax-container {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-    /*  this is where the magic happens:  */
-    background-attachment: fixed;
-  
-    background-image: url(https://teachingamericanhistory.org/content/uploads/2021/09/p03j3vd5.jpg);
-    background-position: center;
-    background-size: cover;
-    row-gap: 4rem;
-  
-    text-align: center;
-  }
 
-  .parallax-container2 {
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-size: contain;
-    padding: 6rem 0;
-    background-image: url(https://www.militarytrader.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY3OTc3NzAxMzAyODA1Nzc3/image-placeholder-title.jpg);
-    gap: 1.6em;
-  }
 
-  .buffer {
-    width: 100%;
-    min-height: 60vh;
-  }
 
 #BOTS{
     color: #fff;
+
 }
 
 #BOMA-title-container{
@@ -152,6 +124,9 @@ img{
         grid-template-columns: repeat(2, 1fr);
         max-width: var(--max-width-desktop);
     }
+    .col-2{
+        grid-column: span 1;     
+    }
 
     #belligerents-lists{
         /* border: 2px solid magenta; */
@@ -161,8 +136,15 @@ img{
         
     }
 
-    .col-2{
-        grid-column: span 2;     
+    #nivelle-blurb{
+        order: -1;
+        grid-column: span 2;
+    }
+
+  
+    .bots-image-wrapper{
+        background-image: url(https://www.gethistory.co.uk/sites/default/files/styles/large/public/2017-03/Over-the-top.jpg?itok=k6oTSkT8);
+        background-size: cover;
     }
 }
 
@@ -189,6 +171,17 @@ img{
 
     .grid-wrapper{
         grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    .col-2{
+        grid-column: span 2;     
+        
+    }
+
+    #nivelle-blurb{
+        order: unset;
+        grid-column: span 2;
 
     }
 

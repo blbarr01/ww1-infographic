@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="parallax.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
     <script src="script.js" defer></script>
     <script src="https://unpkg.com/popmotion@8.1.24/dist/popmotion.global.min.js" defer></script>
@@ -173,7 +174,7 @@
                             alt="">
                     </div>
                     <div class="col-2">
-                        <p class="shadow">The battle of Verdun was initiated by Germans with Operation <em>Gericht</em>,
+                        <p class="shadow" style="text-align: left;">The battle of Verdun was initiated by Germans with Operation <em>Gericht</em>,
                             Operation
                             <em>Judgement</em>.
                             Erich von Falkenhayn, The chief architect of the battle of verdun, sought to create an
@@ -192,7 +193,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Robert_Georges_Nivelle.jpg/440px-Robert_Georges_Nivelle.jpg"
                             alt="Robert Nivelle">
                     </div>
-                    <div class="col-2">
+                    <div class="col-2" id="nivelle-blurb">
                         <p class="shadow bg-transparent">
                             The French General Robert Nivelle met the German aggression, credited with the rallying cry
                             for the
@@ -220,8 +221,7 @@
                         of many english towns having their male populations decimated in a single day.
                     </p>
                     <p class="padding"><em>Single days where everyone lost someone</em></p>
-                    <h3 class="padding">wiki says</h3>
-                    <div id="bots-wiki" class="padding"></div>
+
                     <div class="grid-wrapper">
                         <div class="col-2">
                             <p class="padding">
@@ -254,6 +254,8 @@
                     </div>
                 </div>
             </div>
+            <h3 class="padding">wiki says</h3>
+            <div id="bots-wiki" class="padding"></div>
         </section>
         <section id="BOTMA" class="margins">
             <div id="BOMA-title-container" class="padding">
