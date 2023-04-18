@@ -68,7 +68,7 @@ a:visited{
 }
 
 [class*="col-"] {
-
+    
 }
 
 img{
@@ -89,7 +89,16 @@ img{
     background-size:cover;
 }
 
-
+.brusilov-header{
+    background-image: url(https://schoolshistory.org.uk/topics/wp-content/uploads/2018/08/russian-cavalry-1916.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#brusilov-portrait{
+    aspect-ratio: 3/2;
+    height: 305px;
+    width: 220px;
+}
 
 
 #BOTS{

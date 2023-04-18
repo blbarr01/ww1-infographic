@@ -20,6 +20,8 @@ $(document).ready(()=> {
     fetchAndAppend("Meuse–Argonne_offensive", "#boma-wiki");
     fetchAndAppend("Battle_of_Verdun", "#bov-wiki");
     fetchAndAppend("Battle_of_Belleau_Wood", "#bobw-wiki");
+    fetchAndAppend("Brusilov_offensive", "#brusilov-wiki");
+
 
 });
 
