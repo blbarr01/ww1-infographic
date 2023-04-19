@@ -10,8 +10,11 @@ $(document).ready(()=> {
             let extract = getExtract(pages);
             $(document.createElement("p"))          //create a new p element and wrap it in jquery selector
                 .text(extract)                      // set the text of that new element to the extract we got
-                .appendTo($("#ww1-wiki-display"));  // append that p element to the div by the given id
+                .appendTo($("#ww1-wiki-display"))  // append that p element to the div by the given id
+            $("#ww1-wiki-display").hide().slideDown("slow");
             }
+            $("#ww1-wiki-call").hide();
+        
     })
 
     fetchAndAppend("Battle_of_the_Frontiers", "#bof-wiki"); 

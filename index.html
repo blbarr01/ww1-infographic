@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="parallax.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
     <script src="script.js" defer></script>
-    <script src="https://unpkg.com/popmotion@8.1.24/dist/popmotion.global.min.js" defer></script>
+    
     <title>WWI at a Glance</title>
 </head>
 
@@ -351,7 +351,7 @@
                     </div>
                     <div class="col-2">
                         <img src="https://assets.editorial.aetnd.com/uploads/2022/01/a-1918-group-portrait-of.jpg?width=640&quality=75"
-                            alt="">
+                            alt="" >
                     </div>
                     <div class="col-2 ">
                         <p>
@@ -381,8 +381,12 @@
             <h3>wiki says:</h3>
             <div id="bobw-wiki"></div>
         </section>
-
+        <div id="test">test txt</div>
     </main>
+    <script src="https://unpkg.com/popmotion@8.1.24/dist/popmotion.global.min.js"></script>
+    <script >
+        const test = popmotion.styler(document.getElementById("test"))
+    </script>
 </body>
 
 </html>
