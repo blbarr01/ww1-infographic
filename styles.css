@@ -85,14 +85,14 @@ img{
 }
 
 .bots-image-wrapper{
-    background-image: url(https://www.gethistory.co.uk/sites/default/files/styles/large/public/2017-03/Over-the-top.jpg?itok=k6oTSkT8);
-    background-size:cover;
+
 }
 
 .brusilov-header{
     background-image: url(https://schoolshistory.org.uk/topics/wp-content/uploads/2018/08/russian-cavalry-1916.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 #brusilov-portrait{
     aspect-ratio: 3/2;
