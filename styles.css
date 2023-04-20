@@ -93,6 +93,7 @@ img{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    min-height: 80vh;
 }
 #brusilov-portrait{
     aspect-ratio: 3/2;
