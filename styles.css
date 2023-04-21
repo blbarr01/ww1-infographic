@@ -84,6 +84,10 @@ a:visited{
     
 }
 
+.col-1{
+    grid-column: span 1;
+}
+
 img{
     width:100%; max-width: min-content;
 }
@@ -97,9 +101,6 @@ img{
     background-size: cover;
 }
 
-.bots-image-wrapper{
-
-}
 
 .brusilov-header{
     background-image: url(https://schoolshistory.org.uk/topics/wp-content/uploads/2018/08/russian-cavalry-1916.jpg);
@@ -160,12 +161,7 @@ img{
         grid-column: span 2;     
     }
 
-    #belligerents-lists{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        
-    }
+
 
     #nivelle-blurb{
         order: -1;
