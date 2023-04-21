@@ -80,9 +80,7 @@ a:visited{
 
 }
 
-[class*="col-"] {
-    
-}
+
 
 .col-1{
     grid-column: span 1;
@@ -130,10 +128,12 @@ img{
 
 }
 
-#BOMA-title-container{
+#BOTMA{
     background-image: url(https://sgtyork.org/sites/default/files/main-legacy-meuseoff.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:contain;
+    background-attachment: fixed;
+    min-height: 60vh;
 }
 
 .MA-subtitle{

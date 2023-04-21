@@ -1,7 +1,4 @@
 //once the document is loaded allow these calls to be made 
-
-
-
 $(document).ready(init);
 
 
@@ -18,9 +15,16 @@ function init(){
                 .text(extract)                      // set the text of that new element to the extract we got
                 .appendTo($("#ww1-wiki-display"))  // append that p element to the div by the given id
             $("#ww1-wiki-display").hide().slideDown("slow");
-            }
-            $("#ww1-wiki-call").hide();
+        }
+        $("#ww1-wiki-call").hide();
     })
+
+    var soundFeature = true;
+    $("#sound-toggle").click((e) => { 
+        e.preventDefault();
+        soundFeature = !soundFeature; 
+        console.log(soundFeature);
+    });
 
     fetchAndAppend("Battle_of_the_Frontiers", "#bof-wiki"); 
     fetchAndAppend("Second_Battle_of_Ypres", "#sboty-wiki");
@@ -32,9 +36,10 @@ function init(){
     fetchAndAppend("October_Revolution", "#october-rev-wiki");
 
     const tankAudio = new Audio("./assets/tank_crawl.mp3")
-    
-    $("#BOTS").mouseenter(()=>tankAudio.play())
-    $("#BOTS").mouseleave(()=>tankAudio.pause());
+    //event listeners for the audio feature
+    $("#BOTS").mouseenter(()=> {if(soundFeature)tankAudio.play()})
+    $("#BOTS").mouseleave(()=>{if(soundFeature)tankAudio.pause()});
+
 }
 
 

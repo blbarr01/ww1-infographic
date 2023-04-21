@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="parallax.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
     <script src="script.js" defer></script>
-    
+
     <title>WWI at a Glance</title>
 </head>
 
@@ -41,14 +42,17 @@
             <p>The war would wage for 4 long years </p>
             </div>
             <div>
-                <button id="ww1-wiki-call">show more</button>
+                <div class="flex-center" style="gap: .5em;">
+                    <button id="ww1-wiki-call">show more</button>
+                    <button id="sound-toggle">toggle sound</button>
+                </div>
                 <div id="ww1-wiki-display"></div>
             </div>
             <p>Belligerents</p>
             <div id="belligerents-lists" class="grid-wrapper">
                 <div class="col-1">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Triple_Entente.jpg/562px-Triple_Entente.jpg" 
-                    alt="russian propoganda poster of the entente">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Triple_Entente.jpg/562px-Triple_Entente.jpg"
+                        alt="russian propoganda poster of the entente">
                 </div>
                 <div class="belligerent-list col-1">
                     <h3>entente</h3>
@@ -61,7 +65,8 @@
                     </ul>
                 </div>
                 <div class="col-1">
-                    <img src="https://cdn2.picryl.com/photo/2014/03/21/centralpowersposter1-60a4b0-small.jpg" alt="triple alliance poster">
+                    <img src="https://cdn2.picryl.com/photo/2014/03/21/centralpowersposter1-60a4b0-small.jpg"
+                        alt="triple alliance poster">
                 </div>
                 <div class="belligerent-list col-1">
                     <h3>Axis</h3>
@@ -237,7 +242,7 @@
                     </p>
                     <p class="padding"><em>Single days where everyone lost someone</em></p>
 
-                    <div class="grid-wrapper">
+                    <div class="grid-wrapper" id="somme-info">
                         <div class="col-2">
                             <p class="padding">
                                 the battle of the Somme saw the <span class="txt-accent-prim shadow">introduction of
@@ -248,7 +253,8 @@
                             </p>
                         </div>
                         <div class="col-2">
-                            <img id="mk1-tank" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/British_Mark_I_male_tank_Somme_25_September_1916.jpg/1280px-British_Mark_I_male_tank_Somme_25_September_1916.jpg"
+                            <img id="mk1-tank"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/British_Mark_I_male_tank_Somme_25_September_1916.jpg/1280px-British_Mark_I_male_tank_Somme_25_September_1916.jpg"
                                 alt="image of the mark I tank at the battle of the Somme"
                                 style="width:100%; max-width: min-content; opacity: 0.7;">
                         </div>
@@ -277,7 +283,7 @@
             <h3 class="padding">wiki says</h3>
             <div id="bots-wiki" class="padding"></div>
         </section>
-        <section id="brusilov-offensive" class="bg-black margins" >
+        <section id="brusilov-offensive" class="bg-black margins">
             <div class=" brusilov-header padding bg-transparent shadow ">
                 <h2 class="section-title">The Brusilov Offensive</h2>
                 <h3 class="txt-accent-prim">the Russian Empire mobilizies</h3>
@@ -300,7 +306,7 @@
                 <div class="col-2 padding">
                     <p>
                         Brusilov's new shock troopers would wait till his artillary pounded the enemies
-                        then rush up on them. 
+                        then rush up on them.
                     </p>
                     <p> while Brusilov was the first of the Belligerant Generals to adapt to the new
                         realities of modern war. it was two little too late and could not prevent the fall of the
@@ -308,7 +314,8 @@
                     </p>
                 </div>
                 <div class="col-2" style="display: flex; justify-content: center; align-items: center;">
-                    <img  id="brusilov-portrait" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Broussilov.jpg" alt=" Aleksi brusilov portrait">
+                    <img id="brusilov-portrait" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Broussilov.jpg"
+                        alt=" Aleksi brusilov portrait">
                 </div>
             </div>
 
@@ -319,6 +326,9 @@
                 <h2 class="section-title"> The Ocotber Revolution</h2>
                 <h3 class="txt-accent-prim">the Russian Say enough!</h3>
                 <div id="october-rev-wiki" class="bg-transparent-dark"></div>
+                <div>
+                    <p>regardless </p>
+                </div>
             </div>
         </section>
         <section id="BOTMA" class="margins">
@@ -342,7 +352,7 @@
                 </p>
             </div>
             <h3>wiki says</h3>
-            <div id="boma-wiki"></div>
+            <div id="boma-wiki" class="bg-transparent-dark"></div>
         </section>
         <section id="bellau-woods">
             <div class="bg-black padding">
@@ -400,10 +410,24 @@
         <div id="test">test txt</div>
     </main>
     <script src="https://unpkg.com/popmotion@8.1.24/dist/popmotion.global.min.js"></script>
-    <script >
-        const {keyframes} = popmotion
-        const tankImg = document.getElementById("mk1-tank")
-        console.log(tankImg);
+    <script>
+
+            const { keyframes, styler } = popmotion
+            const tankImg = document.getElementById("mk1-tank")
+            const tankStyler = styler(tankImg);
+            const tankAnimation = keyframes({
+                values: [{ x: -500 }, { x: -450 }, { x: -400 }, { x: -350 }, { x: -300 },
+                { x: -250 }, { x: -200 }, { x: -150 }, { x: -100 }, { x: -50 }, { x: 0 }
+                ],
+                duration: 20000,
+                loop: 0
+            })
+            
+    
+            tankAnimation.start(tankStyler.set)
+         
+
+
 
     </script>
 </body>
