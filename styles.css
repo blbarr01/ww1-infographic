@@ -15,6 +15,10 @@ body {
     font-size: 1.25rem;
 }
 
+.txt-medium{
+    font-size: 1.55rem;
+}
+
 .txt-accent-prim{
     color: red;
 }
@@ -32,6 +36,9 @@ a:visited{
 
 .bg-transparent{
     background-color: #5556;
+}
+.bg-transparent-dark{
+    background-color: #3335;
 }
 
 .shadow{
@@ -106,6 +113,8 @@ img{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 60vh;
 }
 
 
@@ -146,7 +155,6 @@ img{
     }
 
     #belligerents-lists{
-        /* border: 2px solid magenta; */
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;

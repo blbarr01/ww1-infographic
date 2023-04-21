@@ -1,5 +1,11 @@
 //once the document is loaded allow these calls to be made 
-$(document).ready(()=> {
+
+
+
+$(document).ready(init);
+
+
+function init(){
     $("#ww1-wiki-call").on("click", async (event)=>{
         event.preventDefault();  
         const data =  await callWiki("World_War_I")
@@ -14,7 +20,6 @@ $(document).ready(()=> {
             $("#ww1-wiki-display").hide().slideDown("slow");
             }
             $("#ww1-wiki-call").hide();
-        
     })
 
     fetchAndAppend("Battle_of_the_Frontiers", "#bof-wiki"); 
@@ -24,9 +29,13 @@ $(document).ready(()=> {
     fetchAndAppend("Battle_of_Verdun", "#bov-wiki");
     fetchAndAppend("Battle_of_Belleau_Wood", "#bobw-wiki");
     fetchAndAppend("Brusilov_offensive", "#brusilov-wiki");
+    fetchAndAppend("October_Revolution", "#october-rev-wiki");
 
-
-});
+    const tankAudio = new Audio("./assets/tank_crawl.mp3")
+    
+    $("#BOTS").mouseenter(()=>tankAudio.play())
+    $("#BOTS").mouseleave(()=>tankAudio.pause());
+}
 
 
 async function callWiki(query){
