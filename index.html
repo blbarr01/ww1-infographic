@@ -114,9 +114,10 @@
                 they went underground, forming trenches that remained mostly static throughout the duration of the war.
             </p>
 
-
-            <img class="img-width-full img-height-half" src="https://wwitoday.com/images/5739-150-dpi-1914-11-10.jpg"
-                alt="">
+            <div class="flex-center">
+                <img class="" src="https://wwitoday.com/images/5739-150-dpi-1914-11-10.jpg"
+                    alt="illustration of the race to the sea">
+            </div>
             <h3> wiki says: </h3>
             <div id="bof-wiki"></div>
         </section>
@@ -129,8 +130,10 @@
                     class="txt-accent-prim">the
                     first use of poison gas</span>
             </p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/German_Barrage_Fire_at_Night_%28Ypres%29.jpg"
-                alt="chlorine gas attack at second battle of the ypres">
+            <div class="flex-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/German_Barrage_Fire_at_Night_%28Ypres%29.jpg"
+                    alt="chlorine gas attack at second battle of the ypres">
+            </div>
             <h3>wiki says</h3>
             <div id="sboty-wiki"></div>
             <p>The sheer horror of the gas attack inspired notable works of art</p>
@@ -391,7 +394,10 @@
     </main>
     <script src="https://unpkg.com/popmotion@8.1.24/dist/popmotion.global.min.js"></script>
     <script >
-        const test = popmotion.styler(document.getElementById("test"))
+        const {keyframes} = popmotion
+        const tankImg = document.getElementById("mk1-tank")
+        console.log(tankImg);
+
     </script>
 </body>
 

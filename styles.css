@@ -19,6 +19,12 @@ body {
     font-size: 1.55rem;
 }
 
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .txt-accent-prim{
     color: red;
 }
