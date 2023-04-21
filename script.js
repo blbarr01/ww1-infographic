@@ -40,7 +40,7 @@ function init(){
 
 async function callWiki(query){
     try {
-        const response = await fetch(`https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exsentences=10&exlimit=2&titles=${query}&explaintext=1&format=json&&servedby=true&origin=*`); 
+        const response = await fetch(`https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exsentences=10&exlimit=1&titles=${query}&explaintext=1&format=json&&servedby=true&origin=*`); 
         const data = await response.json()
         return data; 
     } catch (error) {
