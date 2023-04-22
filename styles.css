@@ -133,7 +133,7 @@ img{
     background-repeat: no-repeat;
     background-size:contain;
     background-attachment: fixed;
-    min-height: 60vh;
+    min-height: 80vh;
 }
 
 .MA-subtitle{
@@ -161,7 +161,9 @@ img{
         grid-column: span 2;     
     }
 
-
+    #oct-rev-blurb{
+        order: -1;
+    }
 
     #nivelle-blurb{
         order: -1;
@@ -210,6 +212,11 @@ img{
         order: unset;
         grid-column: span 2;
 
+    }
+
+    
+    #oct-rev-blurb{
+        order: unset;
     }
 
 

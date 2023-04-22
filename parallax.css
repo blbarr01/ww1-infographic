@@ -7,12 +7,10 @@
   
     /*  this is where the magic happens:  */
     background-attachment: fixed;
-  
     background-image: url(https://teachingamericanhistory.org/content/uploads/2021/09/p03j3vd5.jpg);
     background-position: center;
     background-size: cover;
     row-gap: 4rem;
-  
     text-align: center;
   }
 
@@ -35,6 +33,3 @@
     background-size:cover;
   }
 
-  .parallax-container4{
-    
-  }
